@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="try.css" />
+    <title>Modal</title>
+    <style>
+.flex-container {
+  
+  margin: 10px;
+  padding: 100px;
+  flex-direction: column;
+}
+</style>
+  </head>
+       
+  <body>
+
+    <div id="main">
+  <h1>GET THAT BAG</h1>
+  </div>
+  <div id="navi">
+    <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+    
+    <center>
+      <form>
+      <div class="container">
+      <div class="flex-container">
+  
+  <div>
+    <input list="courses" name="course" id="course" placeholder="Enter your Course"/>
+      
+    <datalist id="courses">
+        <option value="Computer Science"/>
+        <option value="Engineering"/>
+        <option value="Medicine"/>
+        
+    </datalist>
+  
+  
+</div>
+  <div>
+    <select name="special" id="special">
+      <option hidden>Select your Specialization </option>
+    <optgroup label="Computer Science">
+      <option value="web">Web Development</option>
+      <option value="database">Database Admin</option>
+    </optgroup>
+    <optgroup label="Engineering">
+      <option value="mechanical"> Mechanical Engineering</option>
+      <option value="civil">Civil Engineering</option>
+    </optgroup>
+    <optgroup label="Medicine">
+      <option value="dental"> Dental surgery</option>
+      <option value="general">General Medicine</option>
+    </optgroup>
+  </select>
+    
+  </div>
+  <div>
+    <input list="experiences" name="experience" id="experience" placeholder="Enter your experience"/>
+
+      
+    <datalist id="experiences">
+        <option value="Intern"/>
+        <option value="1 to 2 Years"/>
+        <option value="3 to 5 Years"/>
+        <option value="5 to 10 Years"/>
+        <option value="More than 10 Years"/>
+        
+    </datalist>
+  </div>
+  <div>
+    <input list="education" name="educate" id="educate" placeholder="Enter your education"/>
+
+      
+    <datalist id="education">
+        <option value="High-Shool"/>
+        <option value="Diploma"/>
+        <option value="Undergraduate"/>
+        <option value="Maters"/>
+        <option value="Doctorate"/>
+        
+    </datalist>
+  </div>
+  <input type="submit" id="Submit">
+    
+
+    </div> 
+    </div>
+    </form>
+  </center>
+      
+
+    
+
+
+  </body>
+</html>
